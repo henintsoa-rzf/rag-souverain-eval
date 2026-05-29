@@ -1,3 +1,6 @@
+install:
+	uv sync
+
 qdrant-up:
 	docker compose up -d qdrant
 	@echo "Waiting for Qdrant to be healthy..."
